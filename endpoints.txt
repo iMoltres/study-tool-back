@@ -1,0 +1,42 @@
+general decription endpoints - 
+(use redis)
+
+login - POST  //
+signup - POST //
+
+user endpoints - 
+
+user/id/all/ - GET //
+user/id/name/ - GET //
+user/id/grades/ - GET //
+user/id/subjects/ - GET //
+user/id/subjectsPriority/ - GET //
+
+user/id/subjects/edit - POST //
+user/id/grades/edit - POST //
+
+predictGrade - GET //
+questionHint - GET //
+
+user = {
+    "name": "full name",
+    "password": "87234Y78RFIHUERIHGU", // encrypted
+    "grades": {
+        "assignment": 0.86,
+    },
+    "subjects": [
+        "Chemistry",
+        "AP Lang",
+        "Etc."
+    ]
+}
+
+
+post grades - 
+
+{
+    "grades": {
+        "assignmnent": 0.84,
+        "assignment2": 0.28
+    }
+}
